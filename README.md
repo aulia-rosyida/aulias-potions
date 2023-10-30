@@ -1,6 +1,6 @@
 # aulias_potions
 
-A new Flutter project.
+Potions is the acronym of Positive Word of Affirmations. You can get a random quote of the day to enlighten your day !
 
 ## Getting Started
 
