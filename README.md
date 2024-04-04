@@ -20,6 +20,8 @@ include with your application.
 The `assets/images` directory contains [resolution-aware
 images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
 
+icon sources : https://www.flaticon.com/free-icon/
+
 ## Localization
 
 This project generates localized messages based on arb files found in
