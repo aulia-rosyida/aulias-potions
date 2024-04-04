@@ -1,3 +1,5 @@
+import 'package:aulias_potions/src/sample_feature/youtube_player/youtube_player_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../settings/settings_view.dart';
@@ -55,13 +57,22 @@ class SampleItemListView extends StatelessWidget {
               foregroundImage: AssetImage('assets/images/flutter_logo.png'),
             ),
             onTap: () {
-              // Navigate to the details page. If the user leaves and returns to
-              // the app after it has been killed while running in the
-              // background, the navigation stack is restored.
-              Navigator.restorablePushNamed(
-                context,
-                SampleItemDetailsView.routeName,
-              );
+              if (index == 0) {
+                Navigator.push(
+                  context,
+                  CupertinoPageRoute(
+                    builder: (context) => const YoutubePlayerDemoApp(),
+                  ),
+                );
+              } else {
+                // Navigate to the details page. If the user leaves and returns to
+                // the app after it has been killed while running in the
+                // background, the navigation stack is restored.
+                Navigator.restorablePushNamed(
+                  context,
+                  SampleItemDetailsView.routeName,
+                );
+              }
             },
           );
         },
